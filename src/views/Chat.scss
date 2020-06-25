@@ -1,0 +1,25 @@
+.messages {
+  height: 400px;
+  overflow-y: auto;
+  &__item {
+    &.inbound {
+      justify-content: flex-start;
+      .messages__text {
+        background-color: #f5f5f5;
+        color: #333333;
+      }
+    }
+    &.outbound {
+      justify-content: flex-end;
+      .messages__text {
+        background-color: #007bff;
+        color: #ffffff;
+      }
+    }
+  }
+  &__text {
+    border-radius: .25rem;
+    padding: .5rem;
+    margin: .5rem 0;
+  }
+}
